@@ -7,6 +7,7 @@ Facebook::Application.routes.draw do
 	match 'unfollow' => 'users#unfollow'
 	
 	resources :users
+	resources :posts
 
 	# The priority is based upon order of creation:
 	# first created -> highest priority.

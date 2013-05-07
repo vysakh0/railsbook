@@ -10,4 +10,5 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   acts_as_followable
   acts_as_follower
+  has_many :posts
 end
