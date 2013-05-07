@@ -24,8 +24,12 @@
 
 						<%= render 'layouts/header' %>
 					<div class="row">
-						<p class="notice"><%= notice %></p>
-						<p class="alert"><%= alert %></p>
+                        <% if notice %>
+						<p class="alert-box success"><%= notice %></p>
+                    <% end %>
+                    <% if alert %>
+						<p class="alert-box error"><%= alert %></p>
+                    <% end %>
 						<div class="large-8 columns">
 
 							<%= yield %>

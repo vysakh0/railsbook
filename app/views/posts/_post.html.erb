@@ -11,5 +11,3 @@
 </p>
 <%= image_tag @post.avatar.url if @post.avatar.exists? %>
 <%= link_to pluralize(@comments.count, 'comment'), @post %>
-<%= render 'shared/form' %>
-<%= render @comments  %>

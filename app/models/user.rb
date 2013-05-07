@@ -12,4 +12,5 @@ class User < ActiveRecord::Base
     acts_as_follower
     has_many :posts
     has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "50x50>" }, :default_url => "avatar/missing.jpg"
+    has_many :comments
 end
