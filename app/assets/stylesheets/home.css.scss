@@ -17,13 +17,13 @@ form{
     color: #990033;
     font-weight: bold;
     padding: 5px;
-    float: left;
+    float: right;
 }
 .unlike{
     color: #393f4c;
     font-weight: bold;
     padding: 5px;
-    float: left;
+    float: right;
 }
 .comments{
     float: left;
@@ -31,4 +31,7 @@ form{
 }
 .user-box{
     padding: 10px;
+}
+.likes{
+    padding: 5px;
 }
