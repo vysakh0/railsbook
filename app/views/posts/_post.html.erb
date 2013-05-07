@@ -1,13 +1,9 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <b>User:</b>
-  <%= @post.user_id %>
-</p>
-
-<p>
-  <b>Content:</b>
+<div class="user-box">
+<%= image_tag @post.user.avatar.url(:thumb), class: 'profile' %>
+<%= link_to @post.user.name, @post.user %>
+</div>
   <%= @post.content %>
 </p>
 <%= image_tag @post.avatar.url if @post.avatar.exists? %>
-<%= link_to pluralize(@comments.count, 'comment'), @post %>
+<%= link_to pluralize(@post.comments.count, 'comment'), @post, class: 'comments' %>

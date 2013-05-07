@@ -1,0 +1,13 @@
+<% if user_signed_in? %>
+    <div class="<%= @likeable.class %>-<%= @likeable.id %>">
+
+		<div id="like_form">
+			<% if current_user.likes?(@likeable) %>
+				<%= render 'shared/unlike' %>
+			<% else %>
+				<%= render 'shared/like' %>
+			<% end %>
+		</div>
+	</div>
+<% end %>
+

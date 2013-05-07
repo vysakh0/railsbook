@@ -5,6 +5,8 @@ Facebook::Application.routes.draw do
     root to: 'home#index'
     match 'follow' => 'users#follow'
     match 'unfollow' => 'users#unfollow'
+    match 'like' => 'users#like'
+    match 'unlike' => 'users#unlike'
 
     resources :users
     resources :posts

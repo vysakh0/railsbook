@@ -11,4 +11,24 @@ form{
     width: 70px;
     height: 55px;
     float: left;
+    padding: 4px;
+}
+.like{
+    color: #990033;
+    font-weight: bold;
+    padding: 5px;
+    float: left;
+}
+.unlike{
+    color: #393f4c;
+    font-weight: bold;
+    padding: 5px;
+    float: left;
+}
+.comments{
+    float: left;
+    padding: 5px;
+}
+.user-box{
+    padding: 10px;
 }
