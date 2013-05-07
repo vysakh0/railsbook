@@ -5,7 +5,10 @@
 		</li>
 	</ul>
 	<section class="top-bar-section">
+	<%if user_signed_in? %>
 		<ul class="right">
+			<%= button_to 'Sign out', destroy_user_session_path , method: :delete , class: 'button'%>
 		</ul>
+	<% end %>
 	</section>
 </nav>
