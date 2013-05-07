@@ -1,23 +1,24 @@
 <h1>Listing posts</h1>
 
 <table>
-  <tr>
-    <th>User</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <tr>
+        <th>User</th>
+        <th>Content</th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
 
-<% @posts.each do |post| %>
-  <tr>
-    <td><%= post.user_id %></td>
-    <td><%= post.content %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+    <% @posts.each do |post| %>
+        <tr>
+            <td><%= post.user_id %></td>
+            <td><%= post.content %></td>
+            <td><%= image_tag post.avatar.url if post.avatar.exists? %></td>
+            <td><%= link_to 'Show', post %></td>
+            <td><%= link_to 'Edit', edit_post_path(post) %></td>
+            <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+    <% end %>
 </table>
 
 <br />

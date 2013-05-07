@@ -9,6 +9,7 @@
   <b>Content:</b>
   <%= @post.content %>
 </p>
+<%= image_tag @post.avatar.url if @post.avatar.exists? %>
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
