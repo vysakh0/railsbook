@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'devise'
+gem "socialization"
 
 
 # Gems used only for assets and not required
