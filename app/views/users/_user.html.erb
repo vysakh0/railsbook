@@ -1,0 +1,8 @@
+<div class="row">
+<div class="user-box user">
+<div class="right"><%= render 'shared/follow_form', user: user %></div>
+<%= image_tag user.avatar.url(:thumb), class: 'profile' %>
+<%= link_to user.name, user %>
+</div>
+    
+</div>

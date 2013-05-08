@@ -3,9 +3,9 @@
 
 		<div id="follow_form">
 			<% if current_user.follows?(user) %>
-				<%= render 'shared/unfollow' %>
+				<%= render 'shared/unfollow', user: user %>
 			<% else %>
-				<%= render 'shared/follow' %>
+				<%= render 'shared/follow', user: user %>
 			<% end %>
 		</div>
 	</div>
