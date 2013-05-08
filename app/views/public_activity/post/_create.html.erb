@@ -1,1 +1,4 @@
+<% if activity.trackable  %>
+    <div class="activity_feed">
 <%= render 'posts/post', post: activity.trackable %>
+<% end %>

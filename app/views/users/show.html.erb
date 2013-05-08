@@ -7,3 +7,8 @@
 <span class="left">
 <h4><%= @user.name %></h4>
 </span>
+<div class="row feed ">
+<% @activities.each do |activity| %>
+    <%= render_activity(activity) %>
+<% end %>
+</div>

@@ -4,9 +4,10 @@
 <%= image_tag activity.owner.avatar.url(:thumb), class: 'like_profile' %>
 <%= link_to activity.owner.name, activity.owner %>
 
-liked a <%= link_to activity.trackable.likeable.class, activity.trackable.likeable %>
+commented on <%= link_to "Post", activity.trackable.post %>
+
 </div>
 <div class="like_post">
-<%= render 'posts/post', post: activity.trackable.likeable %>
+<%= render 'comments/comment', comment: activity.trackable%>
 </div>
 <% end %>
