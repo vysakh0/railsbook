@@ -28,7 +28,6 @@ GEM
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
-    acts_as_commentable (3.0.1)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     builder (3.0.4)
@@ -71,6 +70,11 @@ GEM
       cocaine (~> 0.5.0)
       mime-types
     polyglot (0.3.3)
+    public_activity (1.0.3)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      i18n (>= 0.5.0)
+      railties (~> 3.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -127,11 +131,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  acts_as_commentable (= 3.0.1)
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails
   paperclip (~> 3.0)
+  public_activity
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
   socialization

@@ -18,7 +18,6 @@ class PostsController < ApplicationController
         @comment = Comment.new
         @post = Post.find(params[:id])
         @comments = @post.comments
-        @likeable = @post
 
         respond_to do |format|
             format.html # show.html.erb

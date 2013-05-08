@@ -1,9 +1,13 @@
 <p id="notice"><%= notice %></p>
 <div class="user-box">
-<%= image_tag @post.user.avatar.url(:thumb), class: 'profile' %>
-<%= link_to @post.user.name, @post.user %>
+<%= image_tag post.user.avatar.url(:thumb), class: 'profile' %>
+<%= link_to post.user.name, post.user %>
 </div>
-  <%= @post.content %>
+  <%= post.content %>
 </p>
-<%= image_tag @post.avatar.url if @post.avatar.exists? %>
-<%= link_to pluralize(@post.comments.count, 'comment'), @post, class: 'comments' %>
+<%= image_tag post.avatar.url if post.avatar.exists? %>
+    <div class="<%= post.class %>-<%= post.id %>">
+<%= render 'shared/like_form', likeable: post %>
+<%= link_to pluralize(post.comments.count, 'comment'), post, class: 'comments' %>
+<div class="likes"><%= pluralize(post.likers(User).count, 'like')%></div>
+</div>

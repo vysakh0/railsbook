@@ -1,2 +1,4 @@
 <%= render 'posts/form' %>
-
+<% @activities.each do |activity| %>
+    <%= render_activity(activity) %>
+<% end %>

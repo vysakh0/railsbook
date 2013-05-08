@@ -7,8 +7,10 @@
   <%= @post.content %>
 </p>
 <%= image_tag @post.avatar.url if @post.avatar.exists? %>
-<%= render 'shared/like_form' %>
+    <div class="<%= @post.class %>-<%= @post.id %>">
+<%= render 'shared/like_form', likeable: @post %>
 <%= link_to pluralize(@comments.count, 'comment'), @post, class: 'comments' %>
 <div class="likes"><%= pluralize(@post.likers(User).count, 'like')%></div>
+</div>
 <%= render 'shared/form' %>
 <%= render @comments  %>
