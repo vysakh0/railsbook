@@ -3,9 +3,9 @@
 This is a Facebook clone app done in minimum time possible to check the development speed.
 
 #### Related links
-- [Blog on how i made this](vysakh.quora.com/Making-a-Facebook-Rails-App-in-bare-minimum-time)
+- [Blog on how i made this](http://vysakh.quora.com/Making-a-Facebook-Rails-App-in-bare-minimum-time)
 
-- [Live app](rails-book.herokuapp.com)
+- [Live app](http://rails-book.herokuapp.com)
 
 
 #### Quick Start
